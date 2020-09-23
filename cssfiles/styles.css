@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+}
+.container {
+  max-width: 700x;
+  margin: 0 100px;
+  background: rgb(239, 239, 239);
+  display: block;
+}
+
+body {
+  background: url(/background/stars.jpg);
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.Miotag {
+  background: url("/gifs/MioTag.gif") no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 70%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+}
+
+.SoundFollow {
+  background: url("/gifs/SoundFollower.gif") no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 70%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+}
+
+.WifiMonitor {
+  background: url("/gifs/WifiMonitor.gif") no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 70%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+}
+
+.MoonOrbit {
+  background: url("/gifs/MoonOrbit.gif") no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 70%;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+}
+
+p {
+  text-align: center;
+  padding: 30px 50px;
+  font-family: monospace;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.header {
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  color: #f9f9f9;
+  display: grid;
+  text-align: center;
+  background: url(/background/stars.jpg);
+}
+
+.button {
+  margin: auto auto;
+  font-family: monospace;
+  color: rgba(255, 255, 255);
+  height: 20%;
+  font-size: 25px;
+  border-radius: 20%;
+  border-color: rgba(77, 77, 77, 0.5);
+  border-width: 5px;
+  background-color: #000000e7;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: aliceblue;
+}
+
+img {
+  height: 50px;
+  margin: auto auto;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  background: linear-gradient(#7c7c7c, white, #7c7c7c);
+  border: solid;
+  border-width: 10px;
+  border-color: rgba(77, 77, 77, 0.5);
+}
+
+h1 {
+  margin: auto auto;
+  font-family: monospace;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
