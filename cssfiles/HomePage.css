@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(rgb(134, 134, 134), rgb(206, 206, 206));
+}
+
+.header {
+  text-align: center;
+  background-color: #1e1e24;
+  color: aliceblue;
+  height: 80px;
+  font-family: "Lato";
+  margin-bottom: 50px;
+  padding-top: 20px;
+  font-size: 30px;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.subsection {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 0px 30px;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    rgb(83, 83, 83),
+    rgb(184, 184, 184),
+    rgb(83, 83, 83)
+  );
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subsection > div {
+  text-align: center;
+}
+
+.leftproject {
+  border-radius: 20px;
+  background: url(/icons/ProjectIcon.png) no-repeat;
+  background-size: 35%;
+  background-position: center;
+}
+
+.centre {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+}
+
+.rightproject {
+  border-radius: 20px;
+  background: url(/icons/ProjectIcon.png) no-repeat;
+  background-size: 35%;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+.leftskill {
+  border-radius: 20px;
+  background: url(/icons/SkillsetIcon.png) no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
+.rightskill {
+  border-radius: 20px;
+  background: url(/icons/SkillsetIcon.png) no-repeat;
+  background-size: 40%;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+.leftcertification {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/CertificationIcon.png) no-repeat;
+  background-size: 30%;
+  background-position: center;
+}
+
+.rightcertification {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/CertificationIcon.png) no-repeat;
+  background-size: 30%;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+.leftcontact {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/ContactIcon.png) no-repeat;
+  background-size: 30%;
+  background-position: center;
+}
+
+.rightcontact {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/ContactIcon.png) no-repeat;
+  background-size: 30%;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+.button {
+  padding: 20px 40px;
+  border-radius: 20px;
+  position: relative;
+  margin: auto auto;
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  border-width: 5px;
+  border-color: rgb(80, 80, 80);
+  background: radial-gradient(rgb(160, 160, 160), rgb(100, 100, 100));
+  text-transform: capitalize;
+}
+
+button:hover {
+  background: rgba(88, 87, 87, 0.3);
+  color: aliceblue;
+}
+
+img {
+  height: 60%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-radius: 50%;
+}
+
+.subheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  height: 100px;
+  background-color: #1e1e24;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

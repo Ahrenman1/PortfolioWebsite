@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
 * {
   margin: 0;
 }
 .container {
   max-width: 700x;
-  margin: 0 100px;
-  background: rgb(239, 239, 239);
+  margin: 0 0;
+  /* background: linear-gradient(to right, #00000085, #81818185, #00000085); */
   display: block;
 }
 
 body {
-  background: url(/background/stars.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
 }
 
 a {
@@ -19,7 +21,7 @@ a {
 
 .Miotag {
   background: url("/gifs/MioTag.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   background-size: 70%;
   height: 700px;
   background-attachment: fixed;
@@ -29,7 +31,7 @@ a {
 
 .SoundFollow {
   background: url("/gifs/SoundFollower.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   background-size: 70%;
   height: 700px;
   background-attachment: fixed;
@@ -39,7 +41,7 @@ a {
 
 .WifiMonitor {
   background: url("/gifs/WifiMonitor.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   background-size: 70%;
   height: 700px;
   background-attachment: fixed;
@@ -49,7 +51,7 @@ a {
 
 .MoonOrbit {
   background: url("/gifs/MoonOrbit.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   background-size: 70%;
   height: 700px;
   background-attachment: fixed;
@@ -58,26 +60,25 @@ a {
 }
 
 p {
-  text-align: center;
   padding: 30px 50px;
-  font-family: monospace;
+  font-family: "Lato";
   text-transform: capitalize;
   font-size: 25px;
+  margin: auto auto;
 }
 
 .header {
   height: 150px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
   color: #f9f9f9;
   display: grid;
   text-align: center;
-  background: url(/background/stars.jpg);
+  background: #1e1e24;
 }
 
 .button {
   margin: auto auto;
-  font-family: monospace;
+  font-family: "Lato";
   color: rgba(255, 255, 255);
   height: 20%;
   font-size: 25px;
@@ -104,12 +105,15 @@ img {
   background: linear-gradient(#7c7c7c, white, #7c7c7c);
   border: solid;
   border-width: 10px;
+  border-radius: 10px;
+  height: 150px;
   border-color: rgba(77, 77, 77, 0.5);
 }
 
 h1 {
   margin: auto auto;
-  font-family: monospace;
+  font-family: "Lato";
+  font-weight: 800;
   text-transform: capitalize;
   letter-spacing: 5px;
 }
