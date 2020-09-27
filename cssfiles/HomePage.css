@@ -150,7 +150,7 @@ header > a > button:hover {
   font-weight: 800;
   font-size: 12px;
   cursor: pointer;
-  border-width: 5px;
+  border-width: 2px;
   color: aliceblue;
   border-color: #313a3f;
   background: radial-gradient(#1e1e24, #1e1e24);

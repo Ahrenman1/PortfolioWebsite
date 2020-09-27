@@ -98,7 +98,7 @@ p {
   font-size: 25px;
   border-radius: 20px;
   border-color: rgba(77, 77, 77, 0.5);
-  border-width: 5px;
+  border-width: 2px;
   padding: 30px 10px;
   background-color: #000000e7;
   cursor: pointer;
@@ -118,8 +118,8 @@ img {
 .banner {
   display: flex;
   background: linear-gradient(#7c7c7c, white, #7c7c7c);
-  border-top: rgb(83, 83, 83) solid;
-  border-bottom: rgb(83, 83, 83) solid;
+  border-top: rgb(0, 0, 0) double;
+  border-bottom: rgb(0, 0, 0) double;
   border-width: 10px;
   border-radius: 10px;
   height: 150px;
