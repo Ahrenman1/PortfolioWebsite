@@ -2,21 +2,47 @@
 
 * {
   margin: 0;
-}
-.container {
-  max-width: 700x;
-  margin: 0 0;
-  /* background: linear-gradient(to right, #00000085, #81818185, #00000085); */
-  display: block;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
 }
 
-a {
+header {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > h1 {
   color: aliceblue;
-  text-decoration: none;
+  font-family: "Lato";
+  font-size: 25px;
+}
+
+header > a > button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header > img {
+  height: 40px;
+  padding: 0;
+}
+
+header > a > button > img {
+  background-color: rgba(255, 255, 255, 0);
+  filter: invert(60%);
+}
+
+header > a > button:hover {
+  border-color: aqua;
 }
 
 .Miotag {
@@ -64,56 +90,96 @@ p {
   font-family: "Lato";
   text-transform: capitalize;
   font-size: 25px;
-  margin: auto auto;
-}
-
-.header {
-  height: 150px;
-  width: 100%;
-  color: #f9f9f9;
-  display: grid;
-  text-align: center;
-  background: #1e1e24;
 }
 
 .button {
-  margin: auto auto;
   font-family: "Lato";
   color: rgba(255, 255, 255);
-  height: 20%;
   font-size: 25px;
-  border-radius: 20%;
+  border-radius: 20px;
   border-color: rgba(77, 77, 77, 0.5);
   border-width: 5px;
+  padding: 30px 10px;
   background-color: #000000e7;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(95, 95, 95, 0.616);
   color: aliceblue;
+  border-color: aqua;
 }
 
 img {
-  height: 50px;
-  margin: auto auto;
+  height: 40px;
 }
 
 .banner {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+  display: flex;
   background: linear-gradient(#7c7c7c, white, #7c7c7c);
-  border: solid;
+  border-top: rgb(83, 83, 83) solid;
+  border-bottom: rgb(83, 83, 83) solid;
   border-width: 10px;
   border-radius: 10px;
   height: 150px;
-  border-color: rgba(77, 77, 77, 0.5);
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-h1 {
-  margin: auto auto;
+footer {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+footer > a {
+  position: absolute;
+  left: 30px;
+}
+
+footer > a > button {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0);
   font-family: "Lato";
+  font-weight: bold;
+  cursor: pointer;
+  color: aliceblue;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+footer > a > button:hover {
+  color: aliceblue;
+  border-color: aqua;
+}
+
+footer > h1 {
+  color: aliceblue;
+  font-family: "Lato";
+  font-size: 15px;
+  position: absolute;
+  right: 30px;
+}
+
+.backbutton {
+  transition: 0.5s ease;
+  background-color: aliceblue;
+}
+
+.backbutton > img {
+  height: 40px;
+}
+
+.backbutton:hover {
+  background-color: rgb(112, 112, 112);
+  color: aliceblue;
+  border-color: aqua;
+}
+
+.banner > p {
   font-weight: 800;
-  text-transform: capitalize;
-  letter-spacing: 5px;
 }

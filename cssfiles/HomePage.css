@@ -2,24 +2,51 @@
 
 * {
   margin: 0;
+  font-family: "Lato";
 }
 
 body {
-  background: linear-gradient(rgb(134, 134, 134), rgb(206, 206, 206));
+  background: linear-gradient(rgb(192, 192, 192), rgb(253, 253, 253));
 }
 
-.header {
-  text-align: center;
+header {
+  height: 100px;
   background-color: #1e1e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > h1 {
   color: aliceblue;
-  height: 80px;
-  font-family: "Lato";
-  margin-bottom: 50px;
-  padding-top: 20px;
-  font-size: 30px;
-  text-transform: capitalize;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  font-size: 25px;
+}
+
+header > img {
+  height: 50%;
+  border-radius: 10px;
+}
+
+header > a > button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+header > a > button:hover {
+  background-color: #6d6d6d;
+  border-color: aqua;
+}
+
+.Intro {
+  background-color: #1e1e24ee;
+  margin: 30px 30px;
+  border-radius: 10px;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .subsection {
@@ -28,11 +55,7 @@ body {
   grid-template-columns: 2fr 1fr 2fr;
   margin: 0px 30px;
   margin-bottom: 50px;
-  background: linear-gradient(
-    rgb(83, 83, 83),
-    rgb(184, 184, 184),
-    rgb(83, 83, 83)
-  );
+  background: #1e1e24ee;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -45,8 +68,9 @@ body {
 .leftproject {
   border-radius: 20px;
   background: url(/icons/ProjectIcon.png) no-repeat;
-  background-size: 35%;
+  background-size: 25%;
   background-position: center;
+  filter: invert(60%);
 }
 
 .centre {
@@ -57,58 +81,65 @@ body {
 .rightproject {
   border-radius: 20px;
   background: url(/icons/ProjectIcon.png) no-repeat;
-  background-size: 35%;
+  background-size: 25%;
   background-position: center;
   transform: scaleX(-1);
+  filter: invert(60%);
 }
 
 .leftskill {
   border-radius: 20px;
   background: url(/icons/SkillsetIcon.png) no-repeat;
-  background-size: 40%;
+  background-size: 25%;
   background-position: center;
+  filter: invert(60%);
 }
 
 .rightskill {
   border-radius: 20px;
   background: url(/icons/SkillsetIcon.png) no-repeat;
-  background-size: 40%;
+  background-size: 25%;
   background-position: center;
   transform: scaleX(-1);
+  filter: invert(60%);
 }
 
 .leftcertification {
   background-color: #1e1e24;
   border-radius: 20px;
   background: url(/icons/CertificationIcon.png) no-repeat;
-  background-size: 30%;
+  background-size: 20%;
   background-position: center;
+  filter: invert(60%);
 }
 
 .rightcertification {
   background-color: #1e1e24;
   border-radius: 20px;
   background: url(/icons/CertificationIcon.png) no-repeat;
-  background-size: 30%;
+  background-size: 20%;
   background-position: center;
   transform: scaleX(-1);
+  filter: invert(60%);
 }
 
 .leftcontact {
   background-color: #1e1e24;
   border-radius: 20px;
   background: url(/icons/ContactIcon.png) no-repeat;
-  background-size: 30%;
+  background-size: 20%;
   background-position: center;
+  filter: invert(60%);
 }
 
 .rightcontact {
   background-color: #1e1e24;
   border-radius: 20px;
   background: url(/icons/ContactIcon.png) no-repeat;
-  background-size: 30%;
+  background-size: 20%;
   background-position: center;
   transform: scaleX(-1);
+  filter: invert(60%);
 }
 
 .button {
@@ -116,26 +147,21 @@ body {
   border-radius: 20px;
   position: relative;
   margin: auto auto;
-  font-family: "Lato";
   font-weight: 800;
   font-size: 12px;
   cursor: pointer;
   border-width: 5px;
-  border-color: rgb(80, 80, 80);
-  background: radial-gradient(rgb(160, 160, 160), rgb(100, 100, 100));
+  color: aliceblue;
+  border-color: #313a3f;
+  background: radial-gradient(#1e1e24, #1e1e24);
   text-transform: capitalize;
+  transition: 0.5s ease;
 }
 
 button:hover {
   background: rgba(88, 87, 87, 0.3);
   color: aliceblue;
-}
-
-img {
-  height: 60%;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  border-radius: 50%;
+  border-color: aqua;
 }
 
 .subheader {
@@ -143,9 +169,32 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-.footer {
+footer {
   height: 100px;
   background-color: #1e1e24;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+footer > a {
+  position: absolute;
+  left: 30px;
+}
+
+footer > a > button {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+footer > h1 {
+  font-size: 15px;
+  position: absolute;
+  right: 30px;
+  color: aliceblue;
 }
