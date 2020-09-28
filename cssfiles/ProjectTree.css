@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  background: rgb(201, 207, 212);
 }
 
 header {
@@ -22,6 +22,8 @@ header > h1 {
   color: aliceblue;
   font-family: "Lato";
   font-size: 25px;
+  width: 50%;
+  text-align: center;
 }
 
 header > a > button {
@@ -45,44 +47,23 @@ header > a > button:hover {
   border-color: aqua;
 }
 
-.Miotag {
-  background: url("/gifs/MioTag.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: 70%;
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  display: grid;
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.SoundFollow {
-  background: url("/gifs/SoundFollower.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: 70%;
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  display: grid;
+.layout > img {
+  width: 60%;
+  height: auto;
+  padding: 50px;
+  border-radius: 80px;
 }
 
-.WifiMonitor {
-  background: url("/gifs/WifiMonitor.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: 70%;
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  display: grid;
-}
-
-.MoonOrbit {
-  background: url("/gifs/MoonOrbit.gif") no-repeat;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: 70%;
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  display: grid;
+.layout > a > button {
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
 p {
@@ -94,20 +75,20 @@ p {
 
 .button {
   font-family: "Lato";
-  color: rgba(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 25px;
   border-radius: 20px;
   border-color: rgba(77, 77, 77, 0.5);
   border-width: 2px;
-  padding: 30px 10px;
-  background-color: #000000e7;
+  padding: 40px 30px;
+  background-color: rgb(155, 161, 170);
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .button:hover {
   background-color: rgba(95, 95, 95, 0.616);
-  color: aliceblue;
+  color: black;
   border-color: aqua;
 }
 
@@ -117,11 +98,10 @@ img {
 
 .banner {
   display: flex;
-  background: linear-gradient(#7c7c7c, white, #7c7c7c);
+  background: aliceblue;
   border-top: rgb(0, 0, 0) double;
   border-bottom: rgb(0, 0, 0) double;
-  border-width: 10px;
-  border-radius: 10px;
+  border-width: 7px;
   height: 150px;
   align-items: center;
   justify-content: space-evenly;
@@ -132,12 +112,7 @@ footer {
   background-color: #1e1e24;
   display: flex;
   align-items: center;
-  position: relative;
-}
-
-footer > a {
-  position: absolute;
-  left: 30px;
+  justify-content: space-evenly;
 }
 
 footer > a > button {
@@ -146,6 +121,7 @@ footer > a > button {
   background-color: rgba(240, 248, 255, 0);
   font-family: "Lato";
   font-weight: bold;
+  font-size: 15px;
   cursor: pointer;
   color: aliceblue;
   padding: 5px;
@@ -161,8 +137,6 @@ footer > h1 {
   color: aliceblue;
   font-family: "Lato";
   font-size: 15px;
-  position: absolute;
-  right: 30px;
 }
 
 .backbutton {

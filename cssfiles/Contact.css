@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+
+body {
+  background: aliceblue;
+}
+
+p {
+  text-align: center;
+  margin: 20px 100px;
+  border-top: black double;
+  border-bottom: black double;
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.contact-form > input {
+  height: 50px;
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-indent: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.contact-form > input::placeholder {
+  font-size: 15px;
+  text-indent: 20px;
+  font-weight: bold;
+}
+
+.contact-form > textarea {
+  height: 300px;
+  width: 50%;
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 20px 0px;
+  text-indent: 20px;
+  border-radius: 10px;
+}
+
+.contact-form > textarea::placeholder {
+  font-size: 15px;
+  text-indent: 20px;
+  font-weight: bold;
+}
+
+.contact-form > button {
+  width: 50%;
+  height: 60px;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  background-color: rgb(188, 197, 209);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form > button:hover {
+  border-color: aqua;
+  background-color: transparent;
+}
+
+header {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > h1 {
+  color: aliceblue;
+  font-family: "Lato";
+  font-size: 25px;
+}
+
+header > a > button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header > img {
+  height: 40px;
+  padding: 0;
+}
+
+header > a > button > img {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  filter: invert(60%);
+}
+
+header > a > button:hover {
+  border-color: aqua;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div > div {
+  display: flex;
+  width: 40%;
+  border-radius: 20px;
+  flex-direction: column;
+  text-align: center;
+  border: black double;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div > div:hover {
+  background: rgb(223, 240, 255);
+}
+
+div > div > h1 {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+div > div > a > button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+div > div > a > button > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 30%;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+footer {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > a > button {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0);
+  font-family: "Lato";
+  font-weight: bold;
+  cursor: pointer;
+  color: aliceblue;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+footer > a > button:hover {
+  color: aliceblue;
+  border-color: aqua;
+}
+
+footer > h1 {
+  color: aliceblue;
+  font-family: "Lato";
+  font-size: 15px;
+}
