@@ -91,6 +91,8 @@ div > div > p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin: 50px;
 }
 
 #seperator > h1 {
@@ -134,4 +136,10 @@ footer > h1 {
   text-align: center;
   color: aliceblue;
   width: 150px;
+}
+
+span {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: bold;
 }

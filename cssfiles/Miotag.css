@@ -24,6 +24,7 @@ header > h1 {
   font-family: "Lato";
   font-size: 25px;
   text-align: center;
+  width: 40%;
 }
 
 img {
@@ -101,7 +102,7 @@ header > a > button:hover {
 .accordion {
   font-family: "Lato";
   width: 100%;
-  font-size: 15px;
+  font-size: 12px;
   background-color: rgb(196, 206, 219);
   color: rgb(0, 0, 0);
   text-align: left;
@@ -118,6 +119,7 @@ header > a > button:hover {
 
 .accordion--active {
   background-color: #65657eee;
+  color: aliceblue;
 }
 
 .accordion--active::after {
@@ -133,8 +135,8 @@ header > a > button:hover {
   transition: max-height 0.3s;
   margin-top: 10px;
   padding: 0 10px;
-  background-color: #1e1e24ee;
-  color: aliceblue;
+  background-color: rgb(209, 233, 253);
+  color: rgb(0, 0, 0);
   font-family: "Lato";
   position: relative;
 }

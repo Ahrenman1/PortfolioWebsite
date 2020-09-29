@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  background: aliceblue;
+}
+
+header {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > img {
+  height: 40px;
+  filter: invert(90%);
+}
+
+header > h1 {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+header > a > button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: rgba(245, 222, 179, 0);
+}
+
+header > a > button > img {
+  height: 40px;
+  filter: invert(80%);
+}
+
+header > a > button:hover {
+  border-color: aqua;
+}
+
+#seperator {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#seperator > h1 {
+  font-size: 30px;
+  border-top: black double;
+  border-bottom: black double;
+  padding: 20px 0px;
+}
+
+.LargeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Year {
+  padding: 30px;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: black double;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.Year:hover {
+  border-color: aqua;
+}
+
+.Year::after {
+  content: "\25be";
+  float: right;
+  transform: scale(2);
+}
+
+.Year--Active {
+  background-color: #65657eee;
+  color: aliceblue;
+}
+
+.Year--Active::after {
+  content: "\25b4";
+  float: right;
+  transform: scale(1.5);
+}
+
+.container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.section > p {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  width: 40%;
+  height: 150px;
+  background-color: rgb(209, 233, 253);
+  border-radius: 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.section > p:hover {
+  background-color: rgb(157, 248, 248);
+}
+
+span {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  padding-top: 8px;
+}
+
+.transcripts {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.transcripts > h1 {
+  font-size: 15px;
+  font-weight: bold;
+  width: 40%;
+  text-align: center;
+}
+
+.transcripts > a > button {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.5s ease;
+  color: rgb(142, 142, 240);
+  border: black double;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.transcripts > a > button:hover {
+  border-color: aqua;
+}
+
+.Work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobbutton {
+  padding: 30px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: black double;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background: transparent;
+}
+
+.jobbutton:hover {
+  border: aqua double;
+}
+
+.Job--Active {
+  background-color: #65657eee;
+  color: aliceblue;
+}
+
+.jobbutton::after {
+  content: "\25be";
+  float: right;
+  transform: scale(2);
+  padding-left: 20px;
+}
+
+.Job--Active::after {
+  content: "\25b4";
+  float: right;
+  transform: scale(2);
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.job > img {
+  border-radius: 20px;
+  width: 60%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.job > p {
+  text-align: justify;
+  width: 60%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > a > button {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0);
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: aliceblue;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+footer > a > button:hover {
+  color: aliceblue;
+  border-color: aqua;
+}
+
+footer > h1 {
+  color: aliceblue;
+  font-family: "Lato";
+  font-size: 15px;
+}
