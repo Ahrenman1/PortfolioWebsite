@@ -47,7 +47,7 @@ header > a > button:hover {
 }
 
 p {
-  margin: 30px 80px;
+  margin: 30px 5%;
   text-align: center;
   border-top: black double;
   border-bottom: black double;
@@ -62,7 +62,7 @@ p {
 }
 
 .sub {
-  width: 50%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
