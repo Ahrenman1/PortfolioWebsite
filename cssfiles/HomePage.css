@@ -20,7 +20,7 @@ header {
 
 header > h1 {
   color: aliceblue;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -44,12 +44,13 @@ header > a > button:hover {
 .Intro {
   background-color: #1e1e2400;
   margin: 30px 30px;
-  padding: 20px;
+  padding: 30px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   border-top: black double;
   border-bottom: black double;
+  border-radius: 20px;
 }
 
 .subsection {
@@ -119,6 +120,25 @@ header > a > button:hover {
   background-color: #1e1e24;
   border-radius: 20px;
   background: url(/icons/CertificationIcon.png) no-repeat;
+  background-size: 20%;
+  background-position: center;
+  transform: scaleX(-1);
+  filter: invert(10%);
+}
+
+.lefthobby {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/Hobby.png) no-repeat;
+  background-size: 20%;
+  background-position: center;
+  filter: invert(10%);
+}
+
+.righthobby {
+  background-color: #1e1e24;
+  border-radius: 20px;
+  background: url(/icons/Hobby.png) no-repeat;
   background-size: 20%;
   background-position: center;
   transform: scaleX(-1);

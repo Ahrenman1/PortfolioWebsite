@@ -32,11 +32,6 @@ header > a > button {
   background-color: rgba(255, 255, 255, 0);
 }
 
-header > img {
-  height: 40px;
-  padding: 0;
-}
-
 header > a > button > img {
   background-color: rgba(255, 255, 255, 0);
   filter: invert(60%);
