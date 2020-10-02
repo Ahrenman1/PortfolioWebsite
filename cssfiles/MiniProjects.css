@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Lato";
+  padding: 0;
+}
+
+body {
+  background: aliceblue;
+}
+
+header {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > h1 {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+header > a > button {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+header > img {
+  height: 40px;
+  padding: 0;
+}
+
+header > a > button > img {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  filter: invert(60%);
+}
+
+header > a > button:hover {
+  border-color: aqua;
+}
+
+p {
+  margin: 30px 80px;
+  text-align: center;
+  border-top: black double;
+  border-bottom: black double;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+}
+
+.sub > img {
+  border-radius: 20px;
+  width: 90%;
+  border: aqua double;
+}
+
+.sub > p {
+  margin: 0 0;
+  padding: 40px 0px;
+}
+
+.seperator {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer {
+  height: 100px;
+  background-color: #1e1e24;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > a > button {
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0);
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: aliceblue;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+footer > a > button:hover {
+  color: aliceblue;
+  border-color: aqua;
+}
+
+footer > h1 {
+  color: aliceblue;
+  font-family: "Lato";
+  font-size: 15px;
+}
